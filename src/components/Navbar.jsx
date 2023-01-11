@@ -3,6 +3,8 @@ import Logo from "./Logo.svg";
 
 const Container = styled.div`
   height: 60px;
+  width: 70vw;
+  margin: 0 auto;
 `;
 const Wrapper = styled.div`
   height: 100%;
