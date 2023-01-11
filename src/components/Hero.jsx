@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Img from "../images/restaurant.jpg";
 
@@ -55,7 +56,9 @@ const Hero = () => {
           Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Paragraph>
-        <Button>Reserve a table</Button>
+        <Link to="/booking">
+          <Button>Reserve a table</Button>
+        </Link>
       </Left>
       <Right>
         <ImgContainer>

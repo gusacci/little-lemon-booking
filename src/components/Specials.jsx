@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import dessert from "../images/lemonDessert.jpg";
 
@@ -80,7 +81,9 @@ const Specials = () => {
     <Container>
       <Up>
         <Title>Specials</Title>
-        <Button>Online Menu</Button>
+        <Link to="/menu">
+          <Button>Online Menu</Button>
+        </Link>
       </Up>
       <Down>
         <Card>
@@ -96,37 +99,9 @@ const Specials = () => {
             This comes straight from grandma's recipe book, every last
             ingredient has been sourced and is as authentic as can be imagined.
           </Description>
-          <DeliveryButton>Order a delivery</DeliveryButton>
-        </Card>
-        <Card>
-          <ImgContainer>
-            <Img src={dessert} />
-          </ImgContainer>
-
-          <TitleContainer>
-            <Dish>Cheesecake</Dish>
-            <Price>$ 5,99</Price>
-          </TitleContainer>
-          <Description>
-            This comes straight from grandma's recipe book, every last
-            ingredient has been sourced and is as authentic as can be imagined.
-          </Description>
-          <DeliveryButton>Order a delivery</DeliveryButton>
-        </Card>
-        <Card>
-          <ImgContainer>
-            <Img src={dessert} />
-          </ImgContainer>
-
-          <TitleContainer>
-            <Dish>Cheesecake</Dish>
-            <Price>$ 5,99</Price>
-          </TitleContainer>
-          <Description>
-            This comes straight from grandma's recipe book, every last
-            ingredient has been sourced and is as authentic as can be imagined.
-          </Description>
-          <DeliveryButton>Order a delivery</DeliveryButton>
+          <Link to="/order">
+            <DeliveryButton>Order a delivery</DeliveryButton>
+          </Link>
         </Card>
       </Down>
     </Container>

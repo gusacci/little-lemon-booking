@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "./Logo.svg";
 
@@ -15,8 +16,15 @@ const Wrapper = styled.div`
   font-family: "Markazi Text", serif;
   font-size: 18pt;
 `;
-const MenuItem = styled.div`
-  cursor: pointer;
+const MenuItem = styled(Link)`
+  & {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &:visited {
+    color: black;
+  }
 `;
 
 const LogoL = styled.img``;
@@ -25,15 +33,13 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <MenuItem>
+        <MenuItem to="/">
           <LogoL src={Logo} />
         </MenuItem>
-        <MenuItem>Home</MenuItem>
-        <MenuItem>About</MenuItem>
-        <MenuItem>Menu</MenuItem>
-        <MenuItem>Reservations</MenuItem>
-        <MenuItem>Order Online</MenuItem>
-        <MenuItem>Login</MenuItem>
+        <MenuItem to="/">Home</MenuItem>
+        <MenuItem to="/menu">Menu</MenuItem>
+        <MenuItem to="/booking">Reservations</MenuItem>
+        <MenuItem to="/order">Order Online</MenuItem>
       </Wrapper>
     </Container>
   );
