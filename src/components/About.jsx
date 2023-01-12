@@ -22,6 +22,7 @@ const SubTitle = styled.h3`
 `;
 const Paragraph = styled.p`
   font-size: 14pt;
+  font-family: "Karla", sans-serif;
 `;
 const Right = styled.div`
   flex: 1;

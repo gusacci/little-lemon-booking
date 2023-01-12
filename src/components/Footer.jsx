@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Pinterest, Twitter } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../images/footerLogo.jpg";
 
@@ -48,6 +49,12 @@ const IconContainer = styled.div`
   margin-right: 20px;
   cursor: pointer;
 `;
+const LinkF = styled(Link)`
+  & {
+    text-decoration: none;
+    color: black;
+  }
+`;
 
 const Footer = () => {
   return (
@@ -57,12 +64,19 @@ const Footer = () => {
       </Left>
       <CenterLeft>
         <NavigationList>
-          <NavigationItem>Home</NavigationItem>
-          <NavigationItem>About</NavigationItem>
-          <NavigationItem>Menu</NavigationItem>
-          <NavigationItem>Reservations</NavigationItem>
-          <NavigationItem>Order Online</NavigationItem>
-          <NavigationItem>Login</NavigationItem>
+          <LinkF to="/">
+            <NavigationItem>Home</NavigationItem>
+          </LinkF>
+          <LinkF to="/menu">
+            {" "}
+            <NavigationItem>Menu</NavigationItem>
+          </LinkF>
+          <LinkF to="/booking">
+            <NavigationItem>Reservations</NavigationItem>
+          </LinkF>
+          <LinkF to="/order">
+            <NavigationItem>Order Online</NavigationItem>
+          </LinkF>
         </NavigationList>
       </CenterLeft>
       <CenterRight>
