@@ -43,10 +43,13 @@ const Card = styled.div`
 
 const ImgContainer = styled.div`
   width: 100%;
+  height: 250px;
   overflow: hidden;
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+  width: 100%;
+`;
 
 const TitleContainer = styled.div`
   font-size: 18pt;
@@ -88,11 +91,64 @@ const Specials = () => {
       <Down>
         <Card>
           <ImgContainer>
-            <Img src={dessert} />
+            <Img src="https://i.pinimg.com/564x/45/27/f9/4527f9e83d7a9c7eff10891d39d61832.jpg" />
           </ImgContainer>
 
           <TitleContainer>
-            <Dish>Cheesecake</Dish>
+            <Dish>Cauliflower Gyros</Dish>
+            <Price>$ 7,29</Price>
+          </TitleContainer>
+          <Description>
+            Chargrilled, spicy cauliflower works perfectly as the main item
+            inside a warm gyros. Cooled by a lovely, minty tzatziki.
+            Scrumptious.
+          </Description>
+          <Link to="/order">
+            <DeliveryButton>Order a delivery</DeliveryButton>
+          </Link>
+        </Card>
+        <Card>
+          <ImgContainer>
+            <Img src="https://i.pinimg.com/564x/c2/a8/55/c2a8554928394d8147611dcd58701e45.jpg" />
+          </ImgContainer>
+
+          <TitleContainer>
+            <Dish>Chicken Souvlaki</Dish>
+            <Price>$ 4,29</Price>
+          </TitleContainer>
+          <Description>
+            Chicken Souvlaki is a Greek classic that takes marinated, grilled
+            meat to the next level. You can also customize it and add in
+            vegetables if you’d like.
+          </Description>
+          <Link to="/order">
+            <DeliveryButton>Order a delivery</DeliveryButton>
+          </Link>
+        </Card>
+        <Card>
+          <ImgContainer>
+            <Img src="https://cookieandkate.com/images/2019/07/classic-tabouli-recipe-2.jpg" />
+          </ImgContainer>
+
+          <TitleContainer>
+            <Dish>QUINOA TABOULEH</Dish>
+            <Price>$ 5,26</Price>
+          </TitleContainer>
+          <Description>
+            Tabbouleh is a super fresh herb and bulgur salad, with parsley being
+            the number one ingredient.
+          </Description>
+          <Link to="/order">
+            <DeliveryButton>Order a delivery</DeliveryButton>
+          </Link>
+        </Card>{" "}
+        <Card>
+          <ImgContainer>
+            <Img src="https://cookieandkate.com/images/2018/05/greek-yogurt-tart-with-raspberries-and-strawberries.jpg" />
+          </ImgContainer>
+
+          <TitleContainer>
+            <Dish>Raspberry Pie</Dish>
             <Price>$ 5,99</Price>
           </TitleContainer>
           <Description>

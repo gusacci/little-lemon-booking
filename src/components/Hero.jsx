@@ -62,7 +62,7 @@ const Hero = () => {
       </Left>
       <Right>
         <ImgContainer>
-          <HeroImg src={Img} />
+          <HeroImg src="https://thearchitectsdiary.com/wp-content/uploads/2020/06/fi-2--scaled.jpg" />
         </ImgContainer>
       </Right>
     </Container>
